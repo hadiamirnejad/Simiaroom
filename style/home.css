@@ -1,0 +1,898 @@
+@font-face {
+    font-family: "estedad";
+    font-display: auto;
+    font-weight: 100;
+    src: url(../assets/fonts/300-Estedad-FD-Light.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: "estedad-fd";
+    font-display: auto;
+    font-weight: 100;
+    src: url(../assets/fonts/100-Estedad-FD-Thin.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: "estedad-fd";
+    font-display: auto;
+    font-weight: 200;
+    src: url(../assets/fonts/200-Estedad-FD-ExtraLight.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: "estedad-fd";
+    font-display: auto;
+    font-weight: 300;
+    src: url(../assets/fonts/300-Estedad-FD-Light.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: "estedad-fd";
+    font-display: auto;
+    font-weight: 400;
+    src: url(../assets/fonts/400-Estedad-FD-Regular.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: "estedad-fd";
+    font-display: auto;
+    font-weight: 500;
+    src: url(../assets/fonts/500-Estedad-FD-Medium.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: "estedad-fd";
+    font-display: auto;
+    font-weight: 600;
+    src: url(../assets/fonts/600-Estedad-FD-SemiBold.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: "estedad-fd";
+    font-display: auto;
+    font-weight: 700;
+    src: url(../assets/fonts/700-Estedad-FD-Bold.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: "estedad-fd";
+    font-display: auto;
+    font-weight: 800;
+    src: url(../assets/fonts/800-Estedad-FD-ExtraBold.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: "estedad-fd";
+    font-display: auto;
+    font-weight: 900;
+    src: url(../assets/fonts/900-Estedad-FD-Black.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: "estedad-op";
+    font-display: auto;
+    font-weight: 100;
+    src: url(../assets/fonts/Estedad-FD-VFwghtkshd-1.ttf) format('TrueType');
+}
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: estedad-fd;
+    font-size: 16px;
+}
+
+:root {
+    --color-1: #fff;
+    --color-2: #000;
+    --color-3: #39B787;
+    --color-4: #F7F6DC50;
+    --color-5: #6EC1E4;
+    --color-6: #0693e3;
+    --color-7: #8ed1fc;
+    --color-8: #7bdcb5;
+    --color-9: #e9e4d9;
+    --color-10: #033b5c;
+    --color-11: #494949;
+}
+
+.section-title {
+    font-family: estedad-fd;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--color-10);
+    margin: 2rem 0;
+    text-align: center;
+}
+
+
+/* ==================== NAV ==================== */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    background: var(--color-4);
+    padding: 0.5rem;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-bars {
+    font-size: 1.2rem;
+    color: var(--color-3);
+    cursor: pointer;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-reserve {
+    background: var(--color-3);
+    color: var(--color-1);
+}
+
+.btn-reserve:hover {
+    background: transparent;
+    border: 1px solid var(--color-3);
+    color: var(--color-3);
+}
+
+.nav-left .btn-login {
+    background: transparent;
+    border: 1px solid var(--color-3);
+    color: var(--color-3);
+}
+
+
+/* ==================== BANNER ==================== */
+
+.banner {
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.banner img {
+    height: calc(100vh - 2rem);
+    border-radius: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.banner .banner-text {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner-text h2 {
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: var(--color-1);
+}
+
+.banner .banner-text h4 {
+    font-weight: bolder;
+    color: var(--color-1);
+    margin: 2rem 0;
+}
+
+.banner .row {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+}
+
+.row .btn-1 {
+    background: var(--color-5);
+    color: var(--color-1);
+    width: 100%;
+}
+
+.row .btn-1:hover {
+    background-color: var(--color-1);
+    border: 2px solid var(--color-5);
+    color: var(--color-5);
+}
+
+.row .btn-2 {
+    background: var(--color-6);
+    color: var(--color-1);
+    width: 100%;
+}
+
+.row .btn-2:hover {
+    background-color: var(--color-9);
+    border: 2px solid var(--color-6);
+    color: var(--color-6);
+}
+
+.row .btn-3 {
+    background: var(--color-7);
+    color: var(--color-1);
+    width: 100%;
+}
+
+.row .btn-3:hover {
+    background-color: var(--color-9);
+    border: 2px solid var(--color-7);
+    color: var(--color-7);
+}
+
+.row .btn-4 {
+    background: var(--color-8);
+    color: var(--color-1);
+    width: 100%;
+}
+
+.row .btn-4:hover {
+    background-color: var(--color-9);
+    border: 2px solid var(--color-8);
+    color: var(--color-8);
+}
+
+.img-text-content .row {
+    width: 100%;
+}
+
+
+/* ==================== TESTIMONIALS ==================== */
+
+.testmonials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.testmonials .row {
+    width: 100%;
+}
+
+.testmonials .row .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.testmonials .row .col h3 {
+    font-family: estedad-fd;
+    color: var(--color-10);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.testmonials .row .col p {
+    font-family: estedad-fd;
+    color: var(--color-2);
+    font-size: 1.2rem;
+}
+
+
+/* ==================== PORTFOLIO ==================== */
+
+.portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio p {
+    color: var(--color-11);
+}
+
+.portfolio .btn-portfolio-more {
+    background: var(--color-3);
+    color: var(--color-1);
+    margin: 3rem 0;
+    font-size: 1.5em;
+}
+
+.portfolio ul {
+    columns: 3;
+}
+
+.portfolio ul li {
+    margin: 0rem 5rem;
+}
+
+
+/* ==================== SERVICES ==================== */
+
+.services .row .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.services .row .col img {
+    width: 30%;
+    margin: 0;
+}
+
+.services .row .col p {
+    width: 60%;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+
+/* ==================== STUDENTS ==================== */
+
+.students {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.students img {
+    width: 100%;
+    padding: 2rem;
+}
+
+.students-special {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    text-align: justify;
+}
+
+.students .students-special h2 {
+    align-self: flex-start;
+    font-size: 1.5em;
+    color: var(--color-10);
+    margin-bottom: 2rem;
+    line-height: 3rem;
+}
+
+.students .students-special .btn-more {
+    align-self: flex-end;
+    background: transparent;
+    color: var(--color-10);
+    border: 2px solid var(--color-10);
+    width: 50%;
+}
+
+
+/* ==================== FLOW-CHART ==================== */
+
+.flow-chart {
+    width: 100%;
+}
+
+.flow-chart .chart-part-right {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 1fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.flow-chart .chart-part-left {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.flow-chart .chart-part-left h1 {
+    font-size: 4em;
+    color: var(--color-10);
+    margin-right: 1.5rem;
+}
+
+.flow-chart .chart-part-right h1 {
+    font-size: 4em;
+    color: var(--color-10);
+    margin-left: 1.5rem;
+}
+
+.flow-chart .chart-part-left .chart-part-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.flow-chart .chart-part-right .chart-part-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.flow-chart .chart-part-left .chart-part-content h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color-10);
+    align-self: flex-end;
+}
+
+.flow-chart .chart-part-right .chart-part-content h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color-10);
+}
+
+.flow-chart .chart-part-left .chart-part-content p {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--color-11);
+    text-align: end;
+}
+
+.flow-chart .chart-part-right .chart-part-content p {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--color-11);
+    text-align: justify;
+}
+
+
+/* ==================== PACKAGES ==================== */
+
+.packages {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.packages p {
+    font-size: 1em;
+    color: var(--color-11);
+}
+
+.packages .btn-toggle-1,
+.packages .btn-toggle-1:hover {
+    border-radius: 0 15px 15px 0;
+    color: var(--color-1);
+    border: 2px solid var(--color-3);
+    width: 150px;
+    transition: 0.5s;
+    font-weight: bold;
+    background: linear-gradient(to left, var(--color-1) 50%, var(--color-3) 50%) left;
+    background-size: 200% 100%;
+}
+
+.packages .btn-toggle-2,
+.packages .btn-toggle-2:hover {
+    border-radius: 15px 0 0 15px;
+    color: var(--color-3);
+    border: 2px solid var(--color-3);
+    width: 150px;
+    transition: 0.5s;
+    font-weight: bold;
+    background: linear-gradient(to right, var(--color-1) 50%, var(--color-3) 50%) left;
+    background-size: 200% 100%;
+}
+
+.packages .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.packages .card {
+    width: 20rem;
+    box-shadow: 0px 0 6px var(--color-11);
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.packages .card .card-header {
+    width: 100%;
+    height: 7rem;
+    background: var(--color-6);
+    position: relative;
+    color: var(--color-1);
+    overflow: hidden;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 2rem 0 0 0;
+}
+
+.card-header h6 {
+    font-size: 1em;
+    margin: 0;
+    text-decoration: line-through;
+    color: var(--color-1);
+}
+
+.card-header .discount {
+    position: absolute;
+    width: 15rem;
+    transform: rotate(-45deg);
+    left: -4.5rem;
+    top: 1.5rem;
+    background: var(--color-10);
+    vertical-align: middle;
+}
+
+.card-header .discount p {
+    color: var(--color-1);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.card .card-title {
+    margin-top: 1rem;
+}
+
+.card .card-title h1 {
+    margin: 0;
+    font-weight: bolder;
+    color: var(--color-3);
+    text-align: center;
+    position: relative;
+}
+
+.card .card-title h1::after {
+    content: '$';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    font-size: 0.6em;
+}
+
+.card .card-desc {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.card .card-title p {
+    margin: 0;
+    color: var(--color-2);
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.card .btn-buy {
+    background: var(--color-3);
+    border: 2px solid var(--color-3);
+    color: var(--color-1);
+    margin-bottom: 1rem;
+}
+
+.card .btn-buy:hover {
+    background: transparent;
+    border: 2px solid var(--color-3);
+    color: var(--color-3);
+}
+
+.give-discount {
+    color: var(--color-11);
+    margin: 2rem 0;
+}
+
+.give-discount>a {
+    text-decoration: none;
+    color: var(--color-3);
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+
+/* ==================== CUSTOMERS ==================== */
+
+.customers-content {
+    border-radius: 15px;
+    background: var(--color-5);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0px 0 6px var(--color-11);
+}
+
+.customers-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.customers-header img {
+    width: 3rem;
+}
+
+.customers-header p {
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: var(--color-10);
+    margin: 0;
+}
+
+.customers-desc {
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+
+/* ==================== BLOG ==================== */
+
+.blog {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.blog-main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.blog-main .section-title {
+    margin-bottom: 1rem;
+}
+
+.blog p {
+    color: var(--color-11);
+    margin: 0;
+}
+
+.blog-post {
+    padding: 1rem;
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.blog .btn-blog {
+    background: transparent;
+    border: 2px solid var(--color-3);
+    color: var(--color-3);
+}
+
+.blog .btn-blog:hover {
+    background: var(--color-3);
+    border: 2px solid var(--color-3);
+    color: var(--color-1);
+}
+
+
+/* ==================== QA ==================== */
+
+.QA {
+    width: 100%;
+}
+
+.QA-answer {
+    margin-bottom: 1rem;
+    text-align: justify;
+    height: 0px;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.QA-question {
+    color: var(--color-10);
+    font-size: 1.1em;
+    font-weight: 800;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.QA-question img {
+    width: 40px;
+}
+
+
+/* ==================== FOOTER ==================== */
+
+.message {
+    width: 100%;
+    background: var(--color-5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+.message .btn-message {
+    background: transparent;
+    border: 2px solid var(--color-1);
+    color: var(--color-1);
+    padding: 1rem;
+}
+
+.honors p {
+    margin-top: 2rem;
+}
+
+.honor-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+/* medium and up screens */
+
+@media (min-width: 576px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(-25%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+.person-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person-img {
+    width: 100%;
+}
+
+.person-name {
+    font-size: 1em;
+    color: var(--color-11);
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .portfolio ul li {
+        margin: 0rem 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 1.3rem;
+    }
+    .banner .row {
+        width: 90%;
+    }
+    .img-text .img-text-content {
+        position: relative;
+    }
+    .banner .banner-text h2 {
+        font-size: 2rem;
+    }
+    .banner .banner-text h4 {
+        font-size: 1.2rem;
+    }
+    .portfolio ul {
+        columns: 2;
+    }
+    .portfolio ul li {
+        margin: 0rem 3rem;
+    }
+    .students {
+        grid-template-columns: 1fr;
+    }
+    .students .students-special .btn-more {
+        align-self: center;
+    }
+    .flow-chart .chart-part-right {
+        grid-template-columns: auto 1fr 0;
+    }
+    .flow-chart .chart-part-left {
+        grid-template-columns: 0 1fr auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-title {
+        font-size: 1rem;
+    }
+    .banner .row {
+        width: 70%;
+    }
+    .img-text .img-text-content {
+        position: relative;
+    }
+    .banner .banner-text h2 {
+        font-size: 1.5rem;
+    }
+    .banner .banner-text h4 {
+        font-size: 1rem;
+    }
+    .testmonials {
+        margin-top: 10rem;
+    }
+    .portfolio ul {
+        columns: 1;
+    }
+    .portfolio ul li {
+        margin: 0rem 2rem;
+    }
+}
