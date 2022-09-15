@@ -1,645 +1,844 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/0207fcd5f8.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0207fcd5f8.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style/home.css" />
     <title>سیمیاروم</title>
-</head>
+  </head>
 
-<body class="container">
+  <body class="container">
     <div class="sidebar-menu">
-        <div class="d-flex justify-content-between align-items-center ffff">
-            <a class="main-menu-item" href="#">سیمیاروم</a>
-            <i class="close-btn fa-solid fa-rectangle-xmark"></i>
-        </div>
-        <hr />
-        <a class="menu-item" href="#testmonials">کارنامه‌ما</a>
-        <a class="menu-item" href="#portfolio">تراپیست‌ها</a>
-        <a class="menu-item" href="#services">خدمات ویژه</a>
-        <a class="menu-item" href="#flowChart">فلوچارت جلسات</a>
-        <a class="menu-item" href="#packages">پکیج‌ها</a>
-        <a class="menu-item" href="#customers">نظر شما</a>
-        <a class="menu-item" href="#blog">بلاگ</a>
-        <a class="menu-item" href="#QA">سوالات متداول</a>
-        <a class="menu-item" href="#awards">افتخارات و دستاوردها</a>
+      <div class="d-flex justify-content-between align-items-center ffff">
+        <a class="main-menu-item" href="#">سیمیاروم</a>
+        <i class="close-btn fa-solid fa-rectangle-xmark"></i>
+      </div>
+      <hr />
+      <a class="menu-item" href="#testmonials">کارنامه‌ما</a>
+      <a class="menu-item" href="#portfolio">تراپیست‌ها</a>
+      <a class="menu-item" href="#services">خدمات ویژه</a>
+      <a class="menu-item" href="#flowChart">فلوچارت جلسات</a>
+      <a class="menu-item" href="#packages">پکیج‌ها</a>
+      <a class="menu-item" href="#customers">نظر شما</a>
+      <a class="menu-item" href="#blog">بلاگ</a>
+      <a class="menu-item" href="#QA">سوالات متداول</a>
+      <a class="menu-item" href="#awards">افتخارات و دستاوردها</a>
     </div>
     <header>
-        <nav id="navBar">
-            <div class="nav-right">
-                <div class="menu-btn"><i class="menu-bars fa-solid fa-bars"></i></div>
+      <nav id="navBar">
+        <div class="nav-right">
+          <div class="menu-btn"><i class="menu-bars fa-solid fa-bars"></i></div>
+        </div>
+        <div class="nav-center">
+          <img src="./assets/images/logo.png" alt="" srcset="" />
+        </div>
+        <div class="nav-left">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <button class="btn btn-reserve">رزرو مشاوره</button>
             </div>
-            <div class="nav-center">
-                <img src="./assets/images/logo.png" alt="" srcset="" />
+            <div class="col">
+              <button class="btn btn-login">ورود</button>
             </div>
-            <div class="nav-left">
-                <button class="btn btn-reserve">رزرو وقت مشاوره</button>
-                <button class="btn btn-login">ورود</button>
-            </div>
-        </nav>
-        <div class="empty"></div>
-        <section id="banner" class="banner">
-            <img src="./assets/images/banner.jpg" alt="" srcset="" />
-            <div class="banner-text">
-                <h2>ما بهبود حال روان شما را تضمین می‌کنیم!</h2>
-                <h4>اتاق مشاوره آنلاین روانشناسی برای ایرانیان خارج از کشور</h4>
-            </div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
-                <div class="col mb-2">
-                    <button class="btn btn-1">
+          </div>
+        </div>
+      </nav>
+      <div class="empty"></div>
+
+      <section id="banner" class="banner">
+        <img src="./assets/images/banner.jpg" alt="" srcset="" />
+        <div class="banner-text">
+          <h2>ما بهبود حال روان شما را تضمین می‌کنیم</h2>
+          <h4>اتاق مشاوره آنلاین روانشناسی برای ایرانیان خارج از کشور</h4>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
+          <div class="col mb-2">
+            <button class="btn btn-1">
               <div class="btn-content">
                 <h5>فردی</h5>
                 <p>استرس و اضطراب، وسواس و افسردگی</p>
               </div>
             </button>
-                </div>
-                <div class="col mb-2">
-                    <button class="btn btn-2">
+          </div>
+          <div class="col mb-2">
+            <button class="btn btn-2">
               <div class="btn-content">
                 <h5>خانواده و زوج</h5>
                 <p>ازدواج، سکس تراپی، زندگی مشترک</p>
               </div>
             </button>
-                </div>
-                <div class="col mb-2">
-                    <button class="btn btn-3">
+          </div>
+          <div class="col mb-2">
+            <button class="btn btn-3">
               <div class="btn-content">
                 <h5>کودک و نوجوان</h5>
                 <p>برای سنین 3 تا 17 سال</p>
               </div>
             </button>
-                </div>
-                <div class="col mb-2">
-                    <button class="btn btn-4">
+          </div>
+          <div class="col mb-2">
+            <button class="btn btn-4">
               <div class="btn-content">
                 <h5>روان‌پزشکی</h5>
                 <p>دارو درمانی</p>
               </div>
             </button>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </header>
 
     <main>
-        <hr class="section-devider my-5" />
+      <hr class="section-devider my-5" />
 
-        <!-- #region TESTIMONIALS -->
-        <section id="testmonials" class="testmonials">
-            <div class="section-title">
-                اولین سرویس ارائه خدمات روانشناسی آنلاین برای فارسی زبانان
-            </div>
-            <div class="row row-cols-1 row-cols-md-3">
-                <div class="col">
-                    <h3>+6000</h3>
-                    <p>مراجع از 75 کشور دنیا</p>
-                </div>
-                <div class="col">
-                    <h3>+50</h3>
-                    <p>مشاور حرفه ای، دلسوز و باتجربه</p>
-                </div>
-                <div class="col">
-                    <h3>+35000</h3>
-                    <p>جلسه تراپی و مشاوره برگزار شده</p>
-                </div>
-            </div>
-        </section>
-        <!-- #endregion -->
+      <!-- #region TESTIMONIALS -->
+      <section id="testmonials" class="testmonials">
+        <div class="section-title">
+          اولین سرویس ارائه خدمات روانشناسی آنلاین برای فارسی زبانان
+        </div>
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col">
+            <h3>+6000</h3>
+            <p>مراجع از 75 کشور دنیا</p>
+          </div>
+          <div class="col">
+            <h3>+50</h3>
+            <p>مشاور حرفه ای، دلسوز و باتجربه</p>
+          </div>
+          <div class="col">
+            <h3>+35000</h3>
+            <p>جلسه تراپی و مشاوره برگزار شده</p>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion -->
 
-        <hr class="section-devider my-5" />
-        <!-- #region PORTFOLIO -->
-        <section id="portfolio" class="portfolio">
-            <div class="section-title">با شبکه تراپیست‌های ما آشنا شوید</div>
-            <p>
-                شبکه تراپیست‌های ما شامل طیف گسترده‌ای از تخصص‌ها است و بر اساس نیاز مراجعان، بهترین متخصص پیشنهاد می‌شود.
-            </p>
+      <hr class="section-devider my-5" />
+      <!-- #region PORTFOLIO -->
+      <section id="portfolio" class="portfolio">
+        <div class="section-title">با شبکه تراپیست‌های ما آشنا شوید</div>
+        <p>
+          شبکه تراپیست‌های ما شامل طیف گسترده‌ای از تخصص‌ها است و بر اساس نیاز
+          مراجعان، بهترین متخصص پیشنهاد می‌شود.
+        </p>
 
-            <div class="container text-center my-3" style="direction: ltr">
-                <div class="row mx-auto my-auto justify-content-center">
-                    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <div class="col-md-3">
-                                    <div class="person-card p-5">
-                                        <img class="person-img w-100 mb-2" src="./assets/images/1.png" class="img-fluid" />
-                                        <div class="person-name">دکتر فاطمه هادی</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3">
-                                    <div class="person-card p-5">
-                                        <img class="person-img w-100 mb-2" src="./assets/images/2.png" class="img-fluid" />
-                                        <div class="person-name">دکتر لادن فتی</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3">
-                                    <div class="person-card p-5">
-                                        <img class="person-img w-100 mb-2" src="./assets/images/3.png" class="img-fluid" />
-                                        <div class="person-name">دکتر رضا شریفی</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3">
-                                    <div class="person-card p-5">
-                                        <img class="person-img w-100 mb-2" src="./assets/images/4.png" class="img-fluid" />
-                                        <div class="person-name">دکتر مهشاد تهرانی</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3">
-                                    <div class="person-card p-5">
-                                        <img class="person-img w-100 mb-2" src="./assets/images/5.png" class="img-fluid" />
-                                        <div class="person-name">شکوفه اویار حسینی</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3">
-                                    <div class="person-card p-5">
-                                        <img class="person-img w-100 mb-2" src="./assets/images/6.png" class="img-fluid" />
-                                        <div class="person-name">دکتر مونا چراغی</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3">
-                                    <div class="person-card p-5">
-                                        <img class="person-img w-100 mb-2" src="./assets/images/7.png" class="img-fluid" />
-                                        <div class="person-name">دکتر سارا بنی‌هاشمی</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3">
-                                    <div class="person-card p-5">
-                                        <img class="person-img w-100 mb-2" src="./assets/images/8.png" class="img-fluid" />
-                                        <div class="person-name">دکتر سمیه بابایی</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3">
-                                    <div class="person-card p-5">
-                                        <img class="person-img w-100 mb-2" src="./assets/images/9.png" class="img-fluid" />
-                                        <div class="person-name">دکتر حمید محرابی</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3">
-                                    <div class="person-card p-5">
-                                        <img class="person-img w-100 mb-2" src="./assets/images/10.png" class="img-fluid" />
-                                        <div class="person-name">دکتر فرشته موتابی</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3">
-                                    <div class="person-card p-5">
-                                        <img class="person-img w-100 mb-2" src="./assets/images/11.png" class="img-fluid" />
-                                        <div class="person-name">دکتر ملیحه ایلخانی</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-3">
-                                    <div class="person-card p-5">
-                                        <img class="person-img w-100 mb-2" src="./assets/images/12.png" class="img-fluid" />
-                                        <div class="person-name">دکتر شهریار شهیدی</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        </a>
-                        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        </a>
+        <div class="container text-center my-3" style="direction: ltr">
+          <div class="row mx-auto my-auto justify-content-center">
+            <div
+              id="recipeCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="col-md-3">
+                    <div class="person-card p-5">
+                      <img
+                        class="person-img w-100 mb-2"
+                        src="./assets/images/1.png"
+                        class="img-fluid"
+                      />
+                      <div class="person-name">دکتر فاطمه هادی</div>
                     </div>
+                  </div>
                 </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="person-card p-5">
+                      <img
+                        class="person-img w-100 mb-2"
+                        src="./assets/images/2.png"
+                        class="img-fluid"
+                      />
+                      <div class="person-name">دکتر لادن فتی</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="person-card p-5">
+                      <img
+                        class="person-img w-100 mb-2"
+                        src="./assets/images/3.png"
+                        class="img-fluid"
+                      />
+                      <div class="person-name">دکتر رضا شریفی</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="person-card p-5">
+                      <img
+                        class="person-img w-100 mb-2"
+                        src="./assets/images/4.png"
+                        class="img-fluid"
+                      />
+                      <div class="person-name">دکتر مهشاد تهرانی</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="person-card p-5">
+                      <img
+                        class="person-img w-100 mb-2"
+                        src="./assets/images/5.png"
+                        class="img-fluid"
+                      />
+                      <div class="person-name">شکوفه اویار حسینی</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="person-card p-5">
+                      <img
+                        class="person-img w-100 mb-2"
+                        src="./assets/images/6.png"
+                        class="img-fluid"
+                      />
+                      <div class="person-name">دکتر مونا چراغی</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="person-card p-5">
+                      <img
+                        class="person-img w-100 mb-2"
+                        src="./assets/images/7.png"
+                        class="img-fluid"
+                      />
+                      <div class="person-name">دکتر سارا بنی‌هاشمی</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="person-card p-5">
+                      <img
+                        class="person-img w-100 mb-2"
+                        src="./assets/images/8.png"
+                        class="img-fluid"
+                      />
+                      <div class="person-name">دکتر سمیه بابایی</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="person-card p-5">
+                      <img
+                        class="person-img w-100 mb-2"
+                        src="./assets/images/9.png"
+                        class="img-fluid"
+                      />
+                      <div class="person-name">دکتر حمید محرابی</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="person-card p-5">
+                      <img
+                        class="person-img w-100 mb-2"
+                        src="./assets/images/10.png"
+                        class="img-fluid"
+                      />
+                      <div class="person-name">دکتر فرشته موتابی</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="person-card p-5">
+                      <img
+                        class="person-img w-100 mb-2"
+                        src="./assets/images/11.png"
+                        class="img-fluid"
+                      />
+                      <div class="person-name">دکتر ملیحه ایلخانی</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="person-card p-5">
+                      <img
+                        class="person-img w-100 mb-2"
+                        src="./assets/images/12.png"
+                        class="img-fluid"
+                      />
+                      <div class="person-name">دکتر شهریار شهیدی</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                class="carousel-control-next bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
             </div>
+          </div>
+        </div>
 
-            <h4 class="mt-4">همه تخصص‌ها در یک جا</h4>
-            <ul>
-                <li>افسردگی</li>
-                <li>روابط بین فردی</li>
-                <li>اضطراب و استرس</li>
-                <li>فرزندپروری</li>
-                <li> LGBTQIA+</li>
-                <li>بیماری های مزمن</li>
-                <li>اختلالات خوردن</li>
-                <li>مدیریت خشم</li>
-                <li>آسیب جنسی کودکان</li>
-                <li>اختلالات خلقی</li>
-                <li>وسواس فکری-عملی</li>
-                <li>سوگ و تروما</li>
-                <li>سو مصرف مواد مخدر</li>
-                <li>مشکلات خانوادگی</li>
-                <li> سایر…</li>
-            </ul>
-            <button class="btn btn-portfolio-more">با تراپیست خود آشنا شوید</button>
-        </section>
-        <!-- #endregion -->
+        <h4 class="mt-4">همه تخصص‌ها در یک جا</h4>
+        <ul>
+          <li>افسردگی</li>
+          <li>روابط بین فردی</li>
+          <li>اضطراب و استرس</li>
+          <li>فرزندپروری</li>
+          <li> LGBTQIA+</li>
+          <li>بیماری های مزمن</li>
+          <li>اختلالات خوردن</li>
+          <li>مدیریت خشم</li>
+          <li>آسیب جنسی کودکان</li>
+          <li>اختلالات خلقی</li>
+          <li>وسواس فکری-عملی</li>
+          <li>سوگ و تروما</li>
+          <li>سو مصرف مواد مخدر</li>
+          <li>مشکلات خانوادگی</li>
+          <li> سایر…</li>
+        </ul>
+        <button class="btn btn-portfolio-more">با تراپیست خود آشنا شوید</button>
+      </section>
+      <!-- #endregion -->
 
-        <hr class="section-devider my-5" />
-        <!-- #region SERVICES -->
-        <section id="services" class="services">
-            <div class="section-title">ویژگی‌های منحصر به فرد سیمیاروم</div>
+      <hr class="section-devider my-5" />
+      <!-- #region SERVICES -->
+      <section id="services" class="services">
+        <div class="section-title">ویژگی‌های منحصر به فرد سیمیاروم</div>
 
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-                <div class="col">
-                    <img class="mt-2" src="./assets/images/Asset-44.svg" alt="" />
-                    <p class="mt-0">
-                        اختصاص مشاور بر مبنای نیاز مراجعان(Match Process)
-                    </p>
-                </div>
-                <div class="col">
-                    <img src="./assets/images/Asset-46.svg" alt="" />
-                    <p>مجرب‌ترین مشاوران فارسی زبان در سراسر جهان</p>
-                </div>
-                <div class="col">
-                    <img src="./assets/images/Asset-43.svg" alt="" />
-                    <p>امکان دریافت نامه معتبر برای بیمه</p>
-                </div>
-                <div class="col">
-                    <img src="./assets/images/Asset-42.svg" alt="" />
-                    <p>امکان ثبت نام و برگزاری جلسه به‌صورت ناشناس</p>
-                </div>
-                <div class="col">
-                    <img src="./assets/images/Asset-41.svg" alt="" />
-                    <p>ارتباط امن با اپلیکیشن اختصاصی(HIPAA Approved)</p>
-                </div>
-                <div class="col">
-                    <img src="./assets/images/Asset-45.svg" alt="" />
-                    <p>درگاه امن پرداخت دلاری (PayPal, Master, Visa)</p>
-                </div>
-            </div>
-        </section>
-        <!-- #endregion -->
-
-        <hr class="section-devider my-5" />
-        <!-- #region STUDENTS -->
-        <section id="students" class="students">
-            <img src="./assets/images/pexels-andrea-piacquadio-920382.png" alt="" />
-            <div class="students-special">
-                <h2>
-                    اگر دانشجوی خارج از ایران هستید، سیمیاروم برای شما پکیج‌های ویژه دانشجویی در نظر گرفته است.
-                </h2>
-                <button class="btn btn-more">اطلاعات بیشتر</button>
-            </div>
-        </section>
-        <!-- #endregion -->
-
-        <hr class="section-devider my-5" />
-        <!-- #region FLOW CHART -->
-        <section id="flowChart" class="flow-chart">
-            <div class="section-title">روند رزرو جلسه مشاوره</div>
-            <div class="chart-part-right">
-                <h1>1</h1>
-                <div class="chart-part-content">
-                    <h3>شناخت اولیه</h3>
-                    <p>پاسخ به چند سوال کوتاه، وضعیت کلی مراجع را مشخص می‌کند.</p>
-                </div>
-                <div class="chart-part-img"></div>
-            </div>
-            <div class="chart-part-left">
-                <div class="chart-part-img"></div>
-                <div class="chart-part-content">
-                    <h3>تعیین تراپیست</h3>
-                    <p>سیمیاروم بهترین متخصصان را بر مبنای نیاز مراجع معرفی می‌کند.</p>
-                </div>
-                <h1>2</h1>
-            </div>
-            <div class="chart-part-right">
-                <h1>3</h1>
-                <div class="chart-part-content">
-                    <h3>تراپی در زمان مناسب و محیطی امن</h3>
-                    <p>
-                        جلسه تراپی در زمان مناسب مراجع در اپلیکیشن اختصاصی سیمیاروم برگزار می‌شود.
-                    </p>
-                </div>
-                <div class="chart-part-img"></div>
-            </div>
-        </section>
-        <!-- #endregion -->
-
-        <hr class="section-devider my-5" />
-        <!-- #region PACKAGES -->
-        <section id="packages" class="packages">
-            <div class="section-title">پکیچ مورد نظر خود را انتخاب کنید</div>
-            <p>
-                این پکیج ها برای آشنایی با تراپی و مسیر مشاوره برای کاربران جدید طراحی شده است.
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div class="col">
+            <img class="mt-2" src="./assets/images/Asset-44.svg" alt="" />
+            <p class="mt-0">
+              اختصاص مشاور بر مبنای نیاز مراجعان(Match Process)
             </p>
-            <div>
-                <button id="btn-toggle-1" onclick="toggleClicked('btn-toggle-1')" class="btn btn-toggle-1">
+          </div>
+          <div class="col">
+            <img src="./assets/images/Asset-46.svg" alt="" />
+            <p>مجرب‌ترین مشاوران فارسی زبان در سراسر جهان</p>
+          </div>
+          <div class="col">
+            <img src="./assets/images/Asset-43.svg" alt="" />
+            <p>امکان دریافت نامه معتبر برای بیمه</p>
+          </div>
+          <div class="col">
+            <img src="./assets/images/Asset-42.svg" alt="" />
+            <p>امکان ثبت نام و برگزاری جلسه به‌صورت ناشناس</p>
+          </div>
+          <div class="col">
+            <img src="./assets/images/Asset-41.svg" alt="" />
+            <p>ارتباط امن با اپلیکیشن اختصاصی(HIPAA Approved)</p>
+          </div>
+          <div class="col">
+            <img src="./assets/images/Asset-45.svg" alt="" />
+            <p>درگاه امن پرداخت دلاری (PayPal, Master, Visa)</p>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion -->
+
+      <hr class="section-devider my-5" />
+      <!-- #region STUDENTS -->
+      <section id="students" class="students">
+        <img src="./assets/images/pexels-andrea-piacquadio-920382.png" alt="" />
+        <div class="students-special p-2 p-md-3 p-lg-5">
+          <h2>
+            اگر دانشجوی خارج از ایران هستید، سیمیاروم برای شما پکیج‌های ویژه
+            دانشجویی در نظر گرفته است.
+          </h2>
+          <button class="btn btn-more">اطلاعات بیشتر</button>
+        </div>
+      </section>
+      <!-- #endregion -->
+
+      <hr class="section-devider my-5" />
+      <!-- #region FLOW CHART -->
+      <section id="flowChart" class="flow-chart">
+        <div class="section-title">روند رزرو جلسه مشاوره</div>
+        <div class="chart-part-right">
+          <h1>1</h1>
+          <div class="chart-part-content">
+            <h3>شناخت اولیه</h3>
+            <p>پاسخ به چند سوال کوتاه، وضعیت کلی مراجع را مشخص می‌کند.</p>
+          </div>
+          <div class="chart-part-img"></div>
+        </div>
+        <div class="chart-part-left">
+          <div class="chart-part-img"></div>
+          <div class="chart-part-content">
+            <h3>تعیین تراپیست</h3>
+            <p>سیمیاروم بهترین متخصصان را بر مبنای نیاز مراجع معرفی می‌کند.</p>
+          </div>
+          <h1>2</h1>
+        </div>
+        <div class="chart-part-right">
+          <h1>3</h1>
+          <div class="chart-part-content">
+            <h3>تراپی در زمان مناسب و محیطی امن</h3>
+            <p>
+              جلسه تراپی در زمان مناسب مراجع در اپلیکیشن اختصاصی سیمیاروم برگزار
+              می‌شود.
+            </p>
+          </div>
+          <div class="chart-part-img"></div>
+        </div>
+      </section>
+      <!-- #endregion -->
+
+      <hr class="section-devider my-5" />
+      <!-- #region PACKAGES -->
+      <section id="packages" class="packages">
+        <div class="section-title">پکیچ مورد نظر خود را انتخاب کنید</div>
+        <p>
+          این پکیج ها برای آشنایی با تراپی و مسیر مشاوره برای کاربران جدید طراحی
+          شده است.
+        </p>
+        <div>
+          <button
+            id="btn-toggle-1"
+            onclick="toggleClicked('btn-toggle-1')"
+            class="btn btn-toggle-1"
+          >
             کاربر جدید
           </button>
-                <button id="btn-toggle-2" onclick="toggleClicked('btn-toggle-2')" class="btn btn-toggle-2">
+          <button
+            id="btn-toggle-2"
+            onclick="toggleClicked('btn-toggle-2')"
+            class="btn btn-toggle-2"
+          >
             کاربر قدیمی
           </button>
+        </div>
+        <div id="suggest-new">
+          <div class="row text-center g-3">
+            <div class="col suggest-new">
+              <div class="card">
+                <div class="card-header">
+                  <h3>$41.95</h3>
+                  <h6>$69.9</h6>
+                  <div class="discount">
+                    <p>% 40 درصد تخفیف</p>
+                  </div>
+                </div>
+                <div class="card-title">
+                  <h1>41.95</h1>
+                  <p>per session</p>
+                </div>
+                <div class="card-desc">
+                  <p>1 جلسه تراپی 45 دقیقه‌ای</p>
+                  <hr />
+                  <p>1 جلسه پیش مشاوره 45 دقیقه</p>
+                </div>
+                <button class="btn btn-buy">انتخاب بسته</button>
+              </div>
             </div>
-            <div id="suggest-new" class="cards">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>$41.95</h3>
-                        <h6>$69.9</h6>
-                        <div class="discount">
-                            <p>% 40 درصد تخفیف</p>
-                        </div>
-                    </div>
-                    <div class="card-title">
-                        <h1>41.95</h1>
-                        <p>per session</p>
-                    </div>
-                    <div class="card-desc">
-                        <p>1 جلسه تراپی 45 دقیقه‌ای</p>
-                        <hr />
-                        <p>1 جلسه پیش مشاوره 45 دقیقه</p>
-                    </div>
-                    <button class="btn btn-buy">انتخاب بسته</button>
+            <div class="col suggest-new">
+              <div class="card mb-1">
+                <div class="card-header">
+                  <h3>$89.95</h3>
+                  <h6>$179.7</h6>
+                  <div class="discount">
+                    <p>% 50 درصد تخفیف</p>
+                  </div>
                 </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h3>$89.95</h3>
-                        <h6>$179.7</h6>
-                        <div class="discount">
-                            <p>% 50 درصد تخفیف</p>
-                        </div>
-                    </div>
-                    <div class="card-title">
-                        <h1>29.9</h1>
-                        <p>per session</p>
-                    </div>
-                    <div class="card-desc">
-                        <p>3 جلسه تراپی 45 دقیقه‌ای</p>
-                        <hr />
-                        <p>1 جلسه پیش مشاوره 45 دقیقه</p>
-                        <hr />
-                        <p>1 پکیچ تست روانشناسی</p>
-                    </div>
-                    <button class="btn btn-buy">انتخاب بسته</button>
+                <div class="card-title">
+                  <h1>29.9</h1>
+                  <p>per session</p>
                 </div>
+                <div class="card-desc">
+                  <p>3 جلسه تراپی 45 دقیقه‌ای</p>
+                  <hr />
+                  <p>1 جلسه پیش مشاوره 45 دقیقه</p>
+                  <hr />
+                  <p>1 پکیچ تست روانشناسی</p>
+                </div>
+                <button class="btn btn-buy">انتخاب بسته</button>
+              </div>
             </div>
-            <div id="suggest-old" class="cards">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>$41.95</h3>
-                        <h6></h6>
-                        <div class="discount" hidden>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="card-title">
-                        <h1>41.95</h1>
-                        <p>per session</p>
-                    </div>
-                    <div class="card-desc">
-                        <p>1 جلسه تراپی 45 دقیقه‌ای</p>
-                        <hr />
-                        <p>ارتباط تصویری امن</p>
-                        <hr />
-                        <p>بازگشت وجه در صورت عدم رضایت</p>
-                        <hr />
-                        <p>امکان پرداخت دلاری</p>
-                    </div>
-                    <button class="btn btn-buy">انتخاب بسته</button>
+            <div class="col suggest-old">
+              <div class="card">
+                <div class="card-header">
+                  <h3>$41.95</h3>
+                  <h6></h6>
+                  <div class="discount" hidden>
+                    <p></p>
+                  </div>
                 </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h3>$220</h3>
-                        <h6>$249.75</h6>
-                        <div class="discount">
-                            <p>محبوب‌ترین</p>
-                        </div>
-                    </div>
-                    <div class="card-title">
-                        <h1>44</h1>
-                        <p>per session</p>
-                    </div>
-                    <div class="card-desc">
-                        <p>5 جلسه تراپی 45 دقیقه ای</p>
-                        <hr />
-                        <p>ارتباط تصویری امن</p>
-                        <hr />
-                        <p>بازگشت وجه در صورت عدم رضایت</p>
-                        <hr />
-                        <p>امکان پرداخت دلاری</p>
-                    </div>
-                    <button class="btn btn-buy">انتخاب بسته</button>
+                <div class="card-title">
+                  <h1>41.95</h1>
+                  <p>per session</p>
                 </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h3>$351</h3>
-                        <h6>$449</h6>
-                        <div class="discount">
-                            <p>اقتصادی</p>
-                        </div>
-                    </div>
-                    <div class="card-title">
-                        <h1>39.9</h1>
-                        <p>per session</p>
-                    </div>
-                    <div class="card-desc">
-                        <p>9 جلسه تراپی 45 دقیقه ای</p>
-                        <hr />
-                        <p>ارتباط تصویری امن</p>
-                        <hr />
-                        <p>بازگشت وجه در صورت عدم رضایت</p>
-                        <hr />
-                        <p>امکان پرداخت دلاری</p>
-                    </div>
-                    <button class="btn btn-buy">انتخاب بسته</button>
+                <div class="card-desc">
+                  <p>1 جلسه تراپی 45 دقیقه‌ای</p>
+                  <hr />
+                  <p>ارتباط تصویری امن</p>
+                  <hr />
+                  <p>بازگشت وجه در صورت عدم رضایت</p>
+                  <hr />
+                  <p>امکان پرداخت دلاری</p>
                 </div>
+                <button class="btn btn-buy">انتخاب بسته</button>
+              </div>
             </div>
-            <div class="give-discount">
-                برای دریافت تخفیف دانشجویی <a href="#">کلیک</a> کنید
+            <div class="col suggest-old">
+              <div class="card">
+                <div class="card-header">
+                  <h3>$220</h3>
+                  <h6>$249.75</h6>
+                  <div class="discount">
+                    <p>محبوب‌ترین</p>
+                  </div>
+                </div>
+                <div class="card-title">
+                  <h1>44</h1>
+                  <p>per session</p>
+                </div>
+                <div class="card-desc">
+                  <p>5 جلسه تراپی 45 دقیقه ای</p>
+                  <hr />
+                  <p>ارتباط تصویری امن</p>
+                  <hr />
+                  <p>بازگشت وجه در صورت عدم رضایت</p>
+                  <hr />
+                  <p>امکان پرداخت دلاری</p>
+                </div>
+                <button class="btn btn-buy">انتخاب بسته</button>
+              </div>
             </div>
-        </section>
-        <!-- #endregion -->
+            <div class="col suggest-old">
+              <div class="card">
+                <div class="card-header">
+                  <h3>$351</h3>
+                  <h6>$449</h6>
+                  <div class="discount">
+                    <p>اقتصادی</p>
+                  </div>
+                </div>
+                <div class="card-title">
+                  <h1>39.9</h1>
+                  <p>per session</p>
+                </div>
+                <div class="card-desc">
+                  <p>9 جلسه تراپی 45 دقیقه ای</p>
+                  <hr />
+                  <p>ارتباط تصویری امن</p>
+                  <hr />
+                  <p>بازگشت وجه در صورت عدم رضایت</p>
+                  <hr />
+                  <p>امکان پرداخت دلاری</p>
+                </div>
+                <button class="btn btn-buy">انتخاب بسته</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="give-discount">
+          برای دریافت تخفیف دانشجویی <a href="#">کلیک</a> کنید
+        </div>
+      </section>
+      <!-- #endregion -->
 
-        <hr class="section-devider my-5" />
-        <!-- #region CUSTOMERS -->
-        <section id="customers" class="customers">
-            <div class="section-title">
-                مراجعانی که با استفاده سرویس‌های سیمیاروم کیفیت زندگی شان بهبود یافته درباره ما چه می‌گویند!
+      <hr class="section-devider my-5" />
+      <!-- #region CUSTOMERS -->
+      <section id="customers" class="customers">
+        <div class="section-title">
+          مراجعانی که با استفاده سرویس‌های سیمیاروم کیفیت زندگی شان بهبود یافته
+          درباره ما چه می‌گویند!
+        </div>
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col">
+            <div class="customers-content">
+              <div class="customers-header">
+                <img src="./assets/images/Group 1150.svg" alt="" />
+                <p>طاها از سوئیس</p>
+              </div>
+              <div class="customers-desc">
+                <p>
+                  بعد از مهاجرت من نمی‌تونستم جلساتم رو رها کنم؛ چون برای
+                  ازدواجمون بهش احتیاج داشتم. سیمیاروم کمک کرد تا مشاوره
+                  مناسبمون رو پیدا کنیم و این بهترین تصمیم ما بعد از مهاجرت بود.
+                </p>
+              </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-3">
-                <div class="col">
-                    <div class="customers-content">
-                        <div class="customers-header">
-                            <img src="./assets/images/Group 1150.svg" alt="" />
-                            <p>طاها از سوئیس</p>
-                        </div>
-                        <div class="customers-desc">
-                            <p>
-                                بعد از مهاجرت من نمی‌تونستم جلساتم رو رها کنم؛ چون برای ازدواجمون بهش احتیاج داشتم. سیمیاروم کمک کرد تا مشاوره مناسبمون رو پیدا کنیم و این بهترین تصمیم ما بعد از مهاجرت بود.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="customers-content">
-                        <div class="customers-header">
-                            <img src="./assets/images/Group 1146.png" alt="" />
-                            <p>نازنین از آلمان</p>
-                        </div>
-                        <div class="customers-desc">
-                            <p>
-                                برای من دانشجو که اینجا به خاطر دوری از خانواده،تحت فشار روحی بیشتری قرار داشتم حضور سیمیاروم و مشاورانش واقعا دلگرم کننده است.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="customers-content">
-                        <div class="customers-header">
-                            <img src="./assets/images/Group 1148.png" alt="" />
-                            <p>محمدرضا از کانادا</p>
-                        </div>
-                        <div class="customers-desc">
-                            <p>
-                                جا داره از سیمیاروم تشکر کنم که امکانی رو فراهم کرد که بتونم از کیلومترها دورتر با کسی که در درمان افسردگی ماهره و فرهنگمون هم مشترکه، مشاوره داشته باشم.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col">
+            <div class="customers-content">
+              <div class="customers-header">
+                <img src="./assets/images/Group 1146.png" alt="" />
+                <p>نازنین از آلمان</p>
+              </div>
+              <div class="customers-desc">
+                <p>
+                  برای من دانشجو که اینجا به خاطر دوری از خانواده،تحت فشار روحی
+                  بیشتری قرار داشتم حضور سیمیاروم و مشاورانش واقعا دلگرم کننده
+                  است.
+                </p>
+              </div>
             </div>
-        </section>
-        <!-- #endregion -->
+          </div>
+          <div class="col">
+            <div class="customers-content">
+              <div class="customers-header">
+                <img src="./assets/images/Group 1148.png" alt="" />
+                <p>محمدرضا از کانادا</p>
+              </div>
+              <div class="customers-desc">
+                <p>
+                  جا داره از سیمیاروم تشکر کنم که امکانی رو فراهم کرد که بتونم
+                  از کیلومترها دورتر با کسی که در درمان افسردگی ماهره و فرهنگمون
+                  هم مشترکه، مشاوره داشته باشم.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion -->
 
-        <hr class="section-devider my-5" />
-        <!-- #region BLOG -->
-        <section id="blog" class="blog">
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="col">
-                    <div class="blog-main">
-                        <div class="section-title">بلاگ سیمیاروم را دنبال کنید</div>
-                        <p>
-                            بهترین مقالات حوزه روانشناسی در بلاگ سیمیاروم قابل دسترس است
-                        </p>
-                        <button class="btn btn-blog">مقالات بیشتر</button>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="blog-post">
-                        <img src="./assets/images/s1.jpg" alt="" />
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="blog-post">
-                        <img src="./assets/images/s2.jpg" alt="" />
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="blog-post">
-                        <img src="./assets/images/s3.jpg" alt="" />
-                    </div>
-                </div>
+      <hr class="section-devider my-5" />
+      <!-- #region BLOG -->
+      <section id="blog" class="blog">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <div class="blog-main">
+              <div class="section-title">بلاگ سیمیاروم را دنبال کنید</div>
+              <p>
+                بهترین مقالات حوزه روانشناسی در بلاگ سیمیاروم قابل دسترس است
+              </p>
+              <button class="btn btn-blog">مقالات بیشتر</button>
             </div>
-        </section>
-        <!-- #endregion -->
+          </div>
+          <div class="col">
+            <div class="blog-post">
+              <img src="./assets/images/s1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="blog-post">
+              <img src="./assets/images/s2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="blog-post">
+              <img src="./assets/images/s3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion -->
 
-        <hr class="section-devider my-5" />
-        <!-- #region QUESTIONS AND ANSWERS -->
-        <section id="QA" class="QA mb-3">
-            <div class="section-title">سوالات متداول</div>
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-1" aria-expanded="false" aria-controls="panelsStayOpen-1">
-              <i data-bs-target="#panelsStayOpen-1" class="qa-expand fa-solid fa-plus mx-2"></i>
-              <h5 class="p-0 m-0">آیا خودم مشاور را انتخاب می‌کنم؟</h5>
+      <hr class="section-devider my-5" />
+      <!-- #region QUESTIONS AND ANSWERS -->
+      <section id="QA" class="QA mb-3">
+        <div class="section-title">سوالات متداول</div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-1"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-1"
+            >
+              <i
+                data-bs-target="#panelsStayOpen-1"
+                class="qa-expand fa-solid fa-plus mx-2"
+              ></i>
+              <h6 class="p-0 m-0">آیا خودم مشاور را انتخاب می‌کنم؟</h6>
             </button>
-                    <div id="panelsStayOpen-1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body">
-                            انتخاب مشاور با توجه به موضوع مشاوره شما و حوزه تخصصی مشاوران، توسط تیم تخصصی سیمیاروم انجام می­‌شود و زمان مشاوره به شما اطلاع رسانی می‌گردد. در صورتی که برای برگزاری جلسات، مشاور خاصی را مد نظر دارید، پس از ثبت سفارش می‌توانید به سیمیاروم اعلام نمایید
-                            تا در انتخاب مشاور شما در نظر گرفته شود.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-2" aria-expanded="false" aria-controls="panelsStayOpen-2">
-              <i data-bs-target="#panelsStayOpen-2" class="qa-expand fa-solid fa-plus mx-2"></i>
-              <h5 class="p-0 m-0">
+            <div
+              id="panelsStayOpen-1"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                انتخاب مشاور با توجه به موضوع مشاوره شما و حوزه تخصصی مشاوران،
+                توسط تیم تخصصی سیمیاروم انجام می­‌شود و زمان مشاوره به شما اطلاع
+                رسانی می‌گردد. در صورتی که برای برگزاری جلسات، مشاور خاصی را مد
+                نظر دارید، پس از ثبت سفارش می‌توانید به سیمیاروم اعلام نمایید تا
+                در انتخاب مشاور شما در نظر گرفته شود.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-2"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-2"
+            >
+              <i
+                data-bs-target="#panelsStayOpen-2"
+                class="qa-expand fa-solid fa-plus mx-2"
+              ></i>
+              <h6 class="p-0 m-0">
                 آیا از پرداخت هزینه تا برنامه‌ریزی و برگزاری جلسه اول زمان زیادی
                 را باید منتظر باشم؟
-              </h5>
+              </h6>
             </button>
-                    <div id="panelsStayOpen-2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body">
-                            بعد از ثبت نام و ورود اطلاعات توسط شما در سیمیاروم و همچنین پرداخت مبلغ، مشاور شما انتخاب می‌شود و ظرف 24 ساعت آینده به شما اطلاع داده می‌شود.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-3" aria-expanded="false" aria-controls="panelsStayOpen-3">
-              <i data-bs-target="#panelsStayOpen-3" class="qa-expand fa-solid fa-plus mx-2"></i>
-              <h5 class="p-0 m-0">
+            <div
+              id="panelsStayOpen-2"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                بعد از ثبت نام و ورود اطلاعات توسط شما در سیمیاروم و همچنین
+                پرداخت مبلغ، مشاور شما انتخاب می‌شود و ظرف 24 ساعت آینده به شما
+                اطلاع داده می‌شود.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-3"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-3"
+            >
+              <i
+                data-bs-target="#panelsStayOpen-3"
+                class="qa-expand fa-solid fa-plus mx-2"
+              ></i>
+              <h6 class="p-0 m-0">
                 آیا بیمه خدمات مشاوره روانشناسی را پوشش می‌دهد؟
-              </h5>
+              </h6>
             </button>
-                    <div id="panelsStayOpen-3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body">
-                            به این دلیل که سیمیاروم در اروپا ثبت شده است، امکان صدور رسید بیمه وجود دارد و تعداد زیادی از مراجعین سیمیاروم از این امکان استفاده نموده اند. به یاد داشته باشید بیمه شما باید استفاده از خدمات تراپی آنلاین را پشتیبانی نماید.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-4" aria-expanded="false" aria-controls="panelsStayOpen-4">
-              <i data-bs-target="#panelsStayOpen-4" class="qa-expand fa-solid fa-plus mx-2"></i>
-              <h5 class="p-0 m-0">
+            <div
+              id="panelsStayOpen-3"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                به این دلیل که سیمیاروم در اروپا ثبت شده است، امکان صدور رسید
+                بیمه وجود دارد و تعداد زیادی از مراجعین سیمیاروم از این امکان
+                استفاده نموده اند. به یاد داشته باشید بیمه شما باید استفاده از
+                خدمات تراپی آنلاین را پشتیبانی نماید.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-4"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-4"
+            >
+              <i
+                data-bs-target="#panelsStayOpen-4"
+                class="qa-expand fa-solid fa-plus mx-2"
+              ></i>
+              <h6 class="p-0 m-0">
                 آیا می‌توانم پکیچ هایی با جلسات بالاتر را با هزینه مناسب تری
                 تهیه کنم؟
-              </h5>
+              </h6>
             </button>
-                    <div id="panelsStayOpen-4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body">
-                            بله شما می توانید پکیچ های 15،20،30 جلسه ای را با هماهنگی با تیم پشتیبانی سیمیاروم و با هزینه مناسب تر تهیه نمایید.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-5" aria-expanded="false" aria-controls="panelsStayOpen-5">
-              <i data-bs-target="#panelsStayOpen-5" class="qa-expand fa-solid fa-plus mx-2"></i>
-              <h5 class="p-0 m-0">
+            <div
+              id="panelsStayOpen-4"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                بله شما می توانید پکیچ های 15،20،30 جلسه ای را با هماهنگی با تیم
+                پشتیبانی سیمیاروم و با هزینه مناسب تر تهیه نمایید.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-5"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-5"
+            >
+              <i
+                data-bs-target="#panelsStayOpen-5"
+                class="qa-expand fa-solid fa-plus mx-2"
+              ></i>
+              <h6 class="p-0 m-0">
                 آیا خدمات سیمیاروم مخصوص مشاوره ایرانیان خارج از کشور است؟
-              </h5>
+              </h6>
             </button>
-                    <div id="panelsStayOpen-5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body">
-                            ایرانیان داخل کشور هم می‌توانند از جلسات مشاوره سیمیاروم استفاده کنند؛ به شرط این که با IP ایران وارد وبسایت شوند. به این صورت پس از انتخاب یکی از پکیج‌ها، پیش از پرداخت قیمت ریالی را مشاهده خواهند کرد.
-                        </div>
-                    </div>
-                </div>
+            <div
+              id="panelsStayOpen-5"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                ایرانیان داخل کشور هم می‌توانند از جلسات مشاوره سیمیاروم استفاده
+                کنند؛ به شرط این که با IP ایران وارد وبسایت شوند. به این صورت پس
+                از انتخاب یکی از پکیج‌ها، پیش از پرداخت قیمت ریالی را مشاهده
+                خواهند کرد.
+              </div>
             </div>
-        </section>
-        <!-- #endregion -->
+          </div>
+        </div>
+      </section>
+      <!-- #endregion -->
 
-        <hr class="section-devider my-5" />
-        <!-- #region SECTION AWARDS -->
-        <section id="awards" class="awards">
-            <div class="message">
-                <div class="section-title">
-                    هر جای جهان که هستید، با تراپیست خود صحبت کنید
-                </div>
-                <button class="btn btn-message">تراپیست خود را انتخاب کنید</button>
-            </div>
-            <div class="honors">
-                <div class="section-title">افتخارات و دستاوردهای سیمیاروم</div>
-                <div class="honor-items row row-cols-3 row-cols-md-5 w-100">
-                    <div class="col text-center">
-                        <div class="elementor-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Group 1694" width="112.5" height="90" viewBox="0 0 112.5 90">
+      <hr class="section-devider my-5" />
+      <!-- #region SECTION AWARDS -->
+      <section id="awards" class="awards">
+        <div class="message">
+          <div class="section-title">
+            هر جای جهان که هستید، با تراپیست خود صحبت کنید
+          </div>
+          <button class="btn btn-message">تراپیست خود را انتخاب کنید</button>
+        </div>
+        <div class="honors">
+          <div class="section-title">افتخارات و دستاوردهای سیمیاروم</div>
+          <div class="honor-items row row-cols-3 row-cols-md-5 w-100">
+            <div class="col text-center">
+              <div class="elementor-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-name="Group 1694"
+                  width="112.5"
+                  height="90"
+                  viewBox="0 0 112.5 90"
+                >
                   <defs>
                     <clipPath id="upak83rf9a">
                       <path
@@ -1191,11 +1390,17 @@
                     ></path>
                   </g>
                 </svg>
-                        </div>
-                    </div>
-                    <div class="coll text-center">
-                        <div class="elementor-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Group 1696" width="112.5" height="90" viewBox="0 0 112.5 90">
+              </div>
+            </div>
+            <div class="coll text-center">
+              <div class="elementor-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-name="Group 1696"
+                  width="112.5"
+                  height="90"
+                  viewBox="0 0 112.5 90"
+                >
                   <defs>
                     <clipPath id="sx5aqxssha">
                       <path
@@ -1568,11 +1773,17 @@
                     ></path>
                   </g>
                 </svg>
-                        </div>
-                    </div>
-                    <div class="coll text-center">
-                        <div class="elementor-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Group 1703" width="112.5" height="90" viewBox="0 0 112.5 90">
+              </div>
+            </div>
+            <div class="coll text-center">
+              <div class="elementor-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-name="Group 1703"
+                  width="112.5"
+                  height="90"
+                  viewBox="0 0 112.5 90"
+                >
                   <defs>
                     <clipPath id="lqx0bguq4a">
                       <path
@@ -2092,11 +2303,17 @@
                     </g>
                   </g>
                 </svg>
-                        </div>
-                    </div>
-                    <div class="coll text-center">
-                        <div class="elementor-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Group 1705" width="115.918" height="90" viewBox="0 0 115.918 90">
+              </div>
+            </div>
+            <div class="coll text-center">
+              <div class="elementor-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-name="Group 1705"
+                  width="115.918"
+                  height="90"
+                  viewBox="0 0 115.918 90"
+                >
                   <defs>
                     <clipPath id="y928e1ww7a">
                       <path
@@ -2633,11 +2850,17 @@
                     ></path>
                   </g>
                 </svg>
-                        </div>
-                    </div>
-                    <div class="coll text-center">
-                        <div class="elementor-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Group 1707" width="112.5" height="90" viewBox="0 0 112.5 90">
+              </div>
+            </div>
+            <div class="coll text-center">
+              <div class="elementor-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-name="Group 1707"
+                  width="112.5"
+                  height="90"
+                  viewBox="0 0 112.5 90"
+                >
                   <defs>
                     <clipPath id="nuvamflqaa">
                       <path
@@ -3081,122 +3304,139 @@
                     ></path>
                   </g>
                 </svg>
-                        </div>
-                    </div>
-                </div>
-                <p class="text-center p-5 mx-5">
-                    روان‌درمانگران سیمیاروم را مجموعه‌ای از متخصصان تراز اول فارسی‌زبان، با تجربه بسیار طولانی در حوزه‌های مختلف روان‌شناسی تشکیل می‌دهند که علاوه بر حسن شهرت در محافل علمی و تخصصی، به صورت مشخص با مشکلات ایرانیان خارج از کشور آشنا هستند. ما به شما کمک می‌کنیم
-                    به درمانگر متخصص در حوزه مشکل خود دسترسی پیدا کنید.
-                </p>
+              </div>
             </div>
-        </section>
-        <!-- #endregion -->
+          </div>
+          <p class="text-center p-5 mx-5">
+            روان‌درمانگران سیمیاروم را مجموعه‌ای از متخصصان تراز اول فارسی‌زبان،
+            با تجربه بسیار طولانی در حوزه‌های مختلف روان‌شناسی تشکیل می‌دهند که
+            علاوه بر حسن شهرت در محافل علمی و تخصصی، به صورت مشخص با مشکلات
+            ایرانیان خارج از کشور آشنا هستند. ما به شما کمک می‌کنیم به درمانگر
+            متخصص در حوزه مشکل خود دسترسی پیدا کنید.
+          </p>
+        </div>
+      </section>
+      <!-- #endregion -->
     </main>
 
     <footer>
-        <div class="row row-cols-1 row-cols-md-3">
-            <div class="col">
-                <div class="d-flex flex-column">
-                    <div class="title text-center">حوزه‌های مشاوره</div>
-                    <hr class="m-1" />
-                    <ul>
-                        <a class="hoze my-2">
-                            <li>مشاوره افسردگی</li>
-                        </a>
-                        <a class="hoze my-2">
-                            <li>درمان اضطراب و استرس</li>
-                        </a>
-                        <a class="hoze my-2">
-                            <li>مشاوره طلاق</li>
-                        </a>
-                        <a class="hoze my-2">
-                            <li>مشاوره وسواس فکری</li>
-                        </a>
-                        <a class="hoze my-2">
-                            <li>مشاوره ازدواج</li>
-                        </a>
-                        <a class="hoze my-2">
-                            <li>زوج درمانی</li>
-                        </a>
-                        <a class="hoze my-2">
-                            <li>مشاوره جنسی</li>
-                        </a>
-                        <a class="hoze my-2">
-                            <li>مشاوره فردی</li>
-                        </a>
-                        <a class="hoze my-2">
-                            <li>مشاوره خیانت</li>
-                        </a>
-                        <a class="hoze my-2">
-                            <li>مشاوره خانواده</li>
-                        </a>
-                        <a class="hoze my-2">
-                            <li>مشاوره کودک</li>
-                        </a>
-                        <a class="hoze my-2">
-                            <li>مشاوره نوجوان</li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-            <div class="col d-flex flex-column justify-content-between">
-                <div class="d-flex flex-column">
-                    <div class="title text-center">تماس</div>
-                    <hr class="m-1" />
-                    <a class="hoze my-2 text-center">Email info@simiaroom.com</a>
-                    <a class="hoze my-2 text-center">Whatsapp 00989302672054</a>
-                    <a class="hoze my-2 text-center">Telegram @simiaroom </a>
-                </div>
-                <div class="d-flex flex-column">
-                    <div class="title text-center mt-2">زبان /language</div>
-                    <hr class="m-1" />
-                    <div class="row row-cols-2 text-center">
-                        <div class="col">
-                            <a class="hoze my-2">فارسی</a>
-                        </div>
-                        <div class="col">
-                            <a class="hoze my-2">English</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col d-flex flex-column justify-content-between">
-                <div class="d-flex flex-column">
-                    <div class="title text-center">سایر</div>
-                    <hr class="m-1" />
-                    <a class="hoze my-2 text-center">مشاوران ‌سیمیاروم</a>
-                    <a class="hoze my-2 text-center">تست های روانشناسی </a>
-                    <a class="hoze my-2 text-center">بلاگ</a>
-                    <a class="hoze my-2 text-center">درباره ما</a>
-                </div>
-                <div class="d-flex flex-column">
-                    <div class="title text-center mt-2">ما را دنبال کنید</div>
-                    <hr class="m-1" />
-                    <div class="row row-cols-5 text-center">
-                        <div class="col" style="height: 1.5rem;">
-                            <a class="hoze social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-                        </div>
-                        <div class="col">
-                            <a class="hoze social-icon"><i class="fa-brands fa-twitter"></i></a>
-                        </div>
-                        <div class="col">
-                            <a class="hoze social-icon"><i class="fa-brands fa-square-instagram"></i
-                ></a>
-                        </div>
-                        <div class="col">
-                            <a class="hoze social-icon"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                        <div class="col">
-                            <a class="hoze social-icon align-bottom"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="d-flex flex-column">
+            <div class="title text-center">حوزه‌های مشاوره</div>
+            <hr class="m-1" />
+            <ul>
+              <a class="hoze my-2">
+                <li>مشاوره افسردگی</li>
+              </a>
+              <a class="hoze my-2">
+                <li>درمان اضطراب و استرس</li>
+              </a>
+              <a class="hoze my-2">
+                <li>مشاوره طلاق</li>
+              </a>
+              <a class="hoze my-2">
+                <li>مشاوره وسواس فکری</li>
+              </a>
+              <a class="hoze my-2">
+                <li>مشاوره ازدواج</li>
+              </a>
+              <a class="hoze my-2">
+                <li>زوج درمانی</li>
+              </a>
+              <a class="hoze my-2">
+                <li>مشاوره جنسی</li>
+              </a>
+              <a class="hoze my-2">
+                <li>مشاوره فردی</li>
+              </a>
+              <a class="hoze my-2">
+                <li>مشاوره خیانت</li>
+              </a>
+              <a class="hoze my-2">
+                <li>مشاوره خانواده</li>
+              </a>
+              <a class="hoze my-2">
+                <li>مشاوره کودک</li>
+              </a>
+              <a class="hoze my-2">
+                <li>مشاوره نوجوان</li>
+              </a>
+            </ul>
+          </div>
         </div>
-        <div class="text-center mt-3"> copyright 2022 simiaroom.com All Rights Reserved ©</div>
+        <div class="col d-flex flex-column justify-content-between">
+          <div class="d-flex flex-column">
+            <div class="title text-center">تماس</div>
+            <hr class="m-1" />
+            <a class="hoze my-2 text-center">Email info@simiaroom.com</a>
+            <a class="hoze my-2 text-center">Whatsapp 00989302672054</a>
+            <a class="hoze my-2 text-center">Telegram @simiaroom </a>
+          </div>
+          <div class="d-flex flex-column">
+            <div class="title text-center mt-2">زبان /language</div>
+            <hr class="m-1" />
+            <div class="row row-cols-2 text-center">
+              <div class="col">
+                <a class="hoze my-2">فارسی</a>
+              </div>
+              <div class="col">
+                <a class="hoze my-2">English</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column justify-content-between">
+          <div class="d-flex flex-column">
+            <div class="title text-center">سایر</div>
+            <hr class="m-1" />
+            <a class="hoze my-2 text-center">مشاوران ‌سیمیاروم</a>
+            <a class="hoze my-2 text-center">تست های روانشناسی </a>
+            <a class="hoze my-2 text-center">بلاگ</a>
+            <a class="hoze my-2 text-center">درباره ما</a>
+          </div>
+          <div class="d-flex flex-column">
+            <div class="title text-center mt-2">ما را دنبال کنید</div>
+            <hr class="m-1" />
+            <div class="row row-cols-5 text-center">
+              <div class="col" style="height: 1.5rem">
+                <a class="hoze social-icon"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+              <div class="col">
+                <a class="hoze social-icon"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+              <div class="col">
+                <a class="hoze social-icon"
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></a>
+              </div>
+              <div class="col">
+                <a class="hoze social-icon"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+              <div class="col">
+                <a class="hoze social-icon align-bottom"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        copyright 2022 simiaroom.com All Rights Reserved ©
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/home.js"></script>
-</body>
-
+  </body>
 </html>
